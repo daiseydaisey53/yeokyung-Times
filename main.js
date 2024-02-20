@@ -1,8 +1,8 @@
-const API_KEY = `f5e30bcb20854a82aa9f8be1b6193a6a`
+
 let news = [];
 const getLatestNews = async () => {
     const url = new URL(
-        `https://newsapi.org/v2/top-headlines?country=kr&apiKey=${API_KEY}`
+        `http://times-node-env.eba-appvq3ef.ap-northeast-2.elasticbeanstalk.com/top-headlines`
         );
     const response = await fetch(url);
     const data = await response.json();
